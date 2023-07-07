@@ -16,10 +16,11 @@ connection.once('open', async () => {
     // Create empty array to hold the users
     const users = [];
   
-    // Loop 10 times -- add users to the users array
-    for (let i = 0; i < 20; i++) {
+    // Loop 7 times -- add users to the users array
+    for (let i = 0; i < 7; i++) {
       // Get some random assignment objects using a helper function that we imported from ./data
-      const username = getRandomuser();
+      const username = getRandomUser();
+      const email = username + "@gmail.com"
   
       const thought = await Thought.create({
         thoughtText: getRandomThought(),

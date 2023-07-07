@@ -13,7 +13,7 @@ const userSchema = new Schema(
             required: true,
             unique: true,
             match: [
-                /^([a-zA-Z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/,
+                /^([a-zA-Z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
             ]
         },
         thoughts: [
