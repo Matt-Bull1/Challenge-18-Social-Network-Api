@@ -29,7 +29,7 @@ router.route('/:thoughtId/reactions')
 
 
 //api/thoughts
-router.route('/:thoughtId/reactions/:reaction_id')
+router.route('/:thoughtId/reactions/:reactionId')
     .delete(deleteReaction);
 
 
