@@ -86,10 +86,9 @@ module.exports = {
   // create a reaction
   async createReaction (req, res) {
     try {
-        const reaction = await Reaction.create(req.body)
         const thought = await Thought.findOneAndUpdate(
-            { _id: req.body.thoughtId },
-            { $addToSet: { reactions: reaction._id } },
+            { _id: req.params.thoughtId },
+            { $addToSet: { reactions: req.body} },
             { runValidators: true, new: true }
         );
 
