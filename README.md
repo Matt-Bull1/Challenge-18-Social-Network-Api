@@ -19,6 +19,8 @@ Download the files
 
   ## Usage
 
+  https://www.youtube.com/watch?v=RMsNXO3h4u8
+
   Download the files, in the terminal type npm i. After that is done type npm seed, next type npm start to start the server. Open insomnia and using the routes test what you would like
 
   ## Contributors
